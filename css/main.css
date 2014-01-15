@@ -1,0 +1,178 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+abbr[title], dfn[title] {
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+input, select {
+    vertical-align:middle;
+}
+/* remember to define focus styles! */
+:focus {
+	outline-style:dotted;
+	outline-color:#ABD3E8;
+}
+ol, ul {
+	list-style: none;
+}
+header h1 {
+	font-family:'Tungsten A', 'Tungsten B','LeagueGothicRegular', Haettenschweiler, "headlineA", "Arial Narrow Bold", "Arial Narrow", "Arial Black", impact, sans-serif;
+	text-transform:uppercase;
+	font-weight:500;
+	font-style: normal;
+}
+a {
+	text-decoration:none;
+}
+/* Clearfix */
+.header:after, ul:after, .footer:after, .content:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.accessibility, span.accessibility {
+	position:absolute;
+	left:-9999px;
+}
+/* Basic styles */
+@font-face {
+	font-family: 'LeagueGothicRegular';
+	src: url('../type/League_Gothic-webfont.eot');
+	src: local('?'), 
+		url('../type/League_Gothic-webfont.woff') format('woff'), 
+		url('../type/League_Gothic-webfont.ttf') format('truetype'), 
+		url('../type/League_Gothic-webfont.svg#webfontpm5EArBj') format('svg');
+	font-weight:normal;
+	font-style:normal;
+	font-variant:normal;
+}
+html, * {
+	margin: auto;
+	padding:0;
+}
+html {
+	background:transparent url("../img/bg_texture10.jpg") repeat fixed top left;
+}
+body {
+	font-size:62.5%;
+	line-height: 1;
+	text-align:left !important;
+	margin:0 auto;
+	color:#000;
+	font-family:'Archer SSm A', 'Archer SSm B', Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif;
+	font-weight: 500; font-style: normal;
+	background:#fff; 
+	width:90%;
+	padding: 0 4%;
+	max-width:600px;
+}
+header h1 {
+	color:#65d0db;
+	color:#00b0b3;
+	font-size:5.2em;
+}
+header h1 span {
+	font-size:0.5em;
+	line-height:0.5em;
+}
+p {
+	color:#2B373D;
+	font-size:1.6em;
+	line-height:1.4em;
+	margin-top:20px;
+}
+p span {
+	font-family: Baskerville, Palatino, "Palatino Linotype", "Apple Chancery", "Book Antiqua", constantia, georgia, serif;
+  	font-style: italic;
+}
+a {
+	color:#65d0db;
+	color:#00b0b3;
+}
+a:hover, a:active, a:focus {
+	text-decoration:underline;
+	color:#74dce7;
+}
+a:visited {
+	/*color:#99d3d9;*/
+}
+header {
+	margin:0 auto 30px auto;
+	padding-top:20px;
+	border-bottom:1px solid #fff;
+}
+article {
+	margin:4em 0;
+}
+blockquote {
+	font-size:1.2em;
+	font-style:italic;
+	margin:30px 0;
+	text-align:center;
+}
+blockquote a {
+	line-height:1.2em;
+	font-style:normal;
+}
+cite {
+	display:block;
+	font-style:normal;
+	font-size:1.2em;
+	text-align:center;
+	color: #949494;
+}
+footer {
+	margin:0 auto;
+	padding:30px 0;
+}
+/* iPad only[portrait + landscape] */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	header h1 { -webkit-text-size-adjust: none;}
+}
