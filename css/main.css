@@ -82,17 +82,7 @@ a {
 	left:-9999px;
 }
 /* Basic styles */
-@font-face {
-	font-family: 'LeagueGothicRegular';
-	src: url('../type/League_Gothic-webfont.eot');
-	src: local('?'), 
-		url('../type/League_Gothic-webfont.woff') format('woff'), 
-		url('../type/League_Gothic-webfont.ttf') format('truetype'), 
-		url('../type/League_Gothic-webfont.svg#webfontpm5EArBj') format('svg');
-	font-weight:normal;
-	font-style:normal;
-	font-variant:normal;
-}
+
 html, * {
 	margin: auto;
 	padding:0;
@@ -106,12 +96,19 @@ body {
 	text-align:left !important;
 	margin:0 auto;
 	color:#000;
-	font-family:'Archer SSm A', 'Archer SSm B', Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif;
-	font-weight: 500; font-style: normal;
+	font-family:Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif;
 	background:#fff; 
 	width:90%;
 	padding: 0 4%;
 	max-width:600px;
+}
+h2, h3 {
+	font-size:2em;
+	margin:20px 0 10px 0;
+}
+p, li {
+	font-size:1.6em;
+	line-height:1.6em;
 }
 header h1 {
 	color:#65d0db;
