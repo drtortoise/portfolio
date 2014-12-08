@@ -61,9 +61,7 @@ ol, ul {
 	list-style: none;
 }
 header h1 {
-	font-family:'Tungsten A', 'Tungsten B','LeagueGothicRegular', Haettenschweiler, "headlineA", "Arial Narrow Bold", "Arial Narrow", "Arial Black", impact, sans-serif;
 	text-transform:uppercase;
-	font-weight:500;
 	font-style: normal;
 }
 a {
@@ -168,6 +166,18 @@ cite {
 footer {
 	margin:0 auto;
 	padding:30px 0;
+}
+.projects article {
+	padding:20px 0;
+	clear:both;
+}
+.projects article img {
+	float:left;
+	padding-right:10px;
+	padding-top:5px;
+}
+.projects p {
+	margin-top:0;
 }
 /* iPad only[portrait + landscape] */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
