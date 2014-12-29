@@ -67,6 +67,9 @@ header h1 {
 a {
 	text-decoration:none;
 }
+img {
+	max-width:100%;
+}
 /* Clearfix */
 .header:after, ul:after, .footer:after, .content:after {
 	content: ".";
