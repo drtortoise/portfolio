@@ -35,13 +35,6 @@ nav ul {
 blockquote, q {
     quotes:none;
 }
-a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
-}
 abbr[title], dfn[title] {
     cursor:help;
 }
@@ -63,6 +56,7 @@ ol, ul {
 header h1 {
 	text-transform:uppercase;
 	font-style: normal;
+  padding-bottom:40px;
 }
 a {
 	text-decoration:none;
@@ -71,7 +65,7 @@ img {
 	max-width:100%;
 }
 /* Clearfix */
-.header:after, ul:after, .footer:after, .content:after {
+.header:after, ul:after, .footer:after, .content:after, .quotes:after {
 	content: ".";
 	display: block;
 	height: 0;
@@ -88,9 +82,6 @@ html, * {
 	margin: auto;
 	padding:0;
 }
-html {
-	background:transparent url("../img/bg_texture10.jpg") repeat fixed top left;
-}
 body {
 	font-size:62.5%;
 	line-height: 1;
@@ -98,13 +89,16 @@ body {
 	margin:0 auto;
 	color:#000;
 	font-family:Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif;
-	background:#fff; 
-	width:90%;
-	padding: 0 4%;
-	max-width:600px;
 }
-h2, h3 {
+h2 {
 	font-size:2em;
+	margin:20px 0 10px 0;
+}
+.about h2 {
+  font-size:3em;
+}
+h3 {
+	font-size:1.8em;
 	margin:20px 0 10px 0;
 }
 p, li {
@@ -112,8 +106,7 @@ p, li {
 	line-height:1.6em;
 }
 header h1 {
-	color:#65d0db;
-	color:#00b0b3;
+	color:#000;
 	font-size:5.2em;
 }
 header h1 span {
@@ -123,37 +116,40 @@ header h1 span {
 p {
 	color:#2B373D;
 	font-size:1.6em;
-	line-height:1.4em;
+	line-height:1.em;
 	margin-top:20px;
 }
-p span {
+h2 span {
 	font-family: Baskerville, Palatino, "Palatino Linotype", "Apple Chancery", "Book Antiqua", constantia, georgia, serif;
   	font-style: italic;
+    font-weight:normal;
 }
 a {
-	color:#65d0db;
-	color:#00b0b3;
+	color:#1BA5C2;
 }
 a:hover, a:active, a:focus {
 	text-decoration:underline;
-	color:#74dce7;
 }
 a:visited {
-	/*color:#99d3d9;*/
+	color:#purple;
 }
 header {
-	margin:0 auto 30px auto;
+	margin:0 auto 3 auto;
 	padding-top:20px;
 	border-bottom:1px solid #fff;
+  text-align: center;
 }
 article {
-	margin:4em 0;
+	margin: 0;
 }
 blockquote {
 	font-size:1.2em;
 	font-style:italic;
-	margin:30px 0;
+	margin:0 auto;
 	text-align:center;
+  float:left;
+  padding-bottom:10px;
+  width:33%;
 }
 blockquote a {
 	line-height:1.2em;
@@ -166,13 +162,44 @@ cite {
 	text-align:center;
 	color: #949494;
 }
+.quotes {
+  width: 100%;
+  border-bottom:1px solid #000;
+  border-top: 1px solid #000;
+  margin-bottom:40px;
+}
 footer {
 	margin:0 auto;
 	padding:30px 0;
+  clear:both;
+}
+/* iPad only[portrait + landscape] */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	header h1 { -webkit-text-size-adjust: none;}
+}
+.wrapper {
+  margin: 0 auto;
+  max-width:1400px;
+  padding: 0 4%;
+}
+.speaking .wrapper {
+  max-width:600px;
+  margin: 0 auto;
+  background:rgba(255,255,255,0.25);
+  padding-bottom:40px;
+}
+.about, .resume {
+  float:left;
+  width:50%;
+}
+.projects .wrapper {
+  max-width:700px;
+  margin: 0 auto;
 }
 .projects article {
-	padding:10px 0;
-	clear:both;
+  float:left;
+  padding: 20px;
+  margin-right:20px;
 }
 .projects article img {
 	float:left;
@@ -182,7 +209,21 @@ footer {
 .projects p {
 	margin-top:0;
 }
-/* iPad only[portrait + landscape] */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-	header h1 { -webkit-text-size-adjust: none;}
+.resume {
+  clear:left;
 }
+iframe {
+  width:100%;
+}
+@media only screen and (max-width: 768px) {
+    .about, .resume {
+      width:100%;
+  }
+}
+@media only screen and (max-width: 420px) {
+     .quotes blockquote {
+        width:100%;
+        float:none;
+        clear:both;
+    }
+  }
